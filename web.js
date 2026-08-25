@@ -1,3 +1,3 @@
 function ouvrirpage() {
-    window.location.href = "https://example.com";
+    window.location.href = "https://lukecln.pythonanywhere.com";
 }
