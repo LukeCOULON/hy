@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>Accueil</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            font-family: Arial, sans-serif;
+            color: #f4f4f5;
+            background: #09090b;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            background: #09090b;
+        }
+
+        .panel {
+            width: min(92%, 560px);
+            padding: 32px;
+            border: 1px solid #27272a;
+            border-radius: 16px;
+            background: #111113;
+            box-shadow: 0 20px 60px rgb(0 0 0 / 35%);
+        }
+
+        .eyebrow {
+            margin: 0 0 12px;
+            color: #a1a1aa;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        h1, h2 { margin: 0; }
+        h1 { font-size: clamp(28px, 6vw, 42px); }
+        h2 { font-size: 24px; }
+
+        p {
+            color: #a1a1aa;
+            line-height: 1.6;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 24px;
+        }
+
+        button {
+            min-height: 44px;
+            padding: 0 18px;
+            border: 1px solid #3f3f46;
+            border-radius: 8px;
+            background: #18181b;
+            color: #f4f4f5;
+            font: inherit;
+            cursor: pointer;
+        }
+
+        button:hover { background: #27272a; }
+
+        .primary {
+            border-color: #fafafa;
+            background: #fafafa;
+            color: #09090b;
+        }
+
+        .primary:hover { background: #d4d4d8; }
+        .hidden { display: none; }
+
+        .details {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #27272a;
+        }
+        .suivbut {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="consentOverlay" class="panel" aria-labelledby="consentTitle">
+        <p class="eyebrow">1</p>
+        <h1 id="consentTitle">1</h1>
+        <p>1</p>
+        <div class="actions">
+            <button id="declineButton" type="button">1</button>
+            <button id="detailsButton" type="button">1</button>
+            <button id="acceptButton" class="primary" type="button" onclick="acceptConsent()">1</button>
+        </div>
+        <div id="privacyDetails" class="details hidden">
+            <h2>1</h2>
+            <p>1</p>
+            <button id="closeDetailsButton" type="button">1</button>
+        </div>
+    </section>
+
+    <main id="mainContent" class="suivbut">
+        <div>
+            <p>Ce site est developpé sans aide externe, veuillez m'excusez pour les possible bug, bonne visite !</p>
+            <button id="1" type="button" onclick="ouvrirpage()">compris</button>
+        </div>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script src="key.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="web.js"></script>
+</body>
+</html>
